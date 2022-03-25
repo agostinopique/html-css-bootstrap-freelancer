@@ -1,0 +1,82 @@
+.debug {
+    background-color: rgba(255, 0, 0, 0.4);
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+.ap_container {
+    width: 100%;
+}
+
+.ap_debug{
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.4);
+    height: 50px;
+}
+
+.ap_center_tx {
+    text-align: center;
+}
+
+.ap_w_70p {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.jumbotron {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: #32C2A4;
+}
+
+.jumbo-box {
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.profile_img {
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+._about {
+    background-color: #19BC9B;
+}
+
+.form {
+    width: 100%;
+    height: 200px;
+}
+
+.ap_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #3A546D;
+}
+
+.copyright {
+    background-color: #2C3E50;
+    height: 70px;
+}
+
+.copy_box {
+    height: 40px;
+    width: 100px;
+    color: white;
+}
