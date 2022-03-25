@@ -4,18 +4,14 @@
     border: 1px solid black;
 }
 
-.ap_container {
-    width: 100%;
+section {
+    padding: 15px;
 }
 
 .ap_debug{
     border: 1px solid black;
     background-color: rgba(255, 0, 0, 0.4);
     height: 50px;
-}
-
-.ap_center_tx {
-    text-align: center;
 }
 
 .jumbotron {
