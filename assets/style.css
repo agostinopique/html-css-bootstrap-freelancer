@@ -18,14 +18,7 @@
     text-align: center;
 }
 
-.ap_w_70p {
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 15px;
-}
-
 .jumbotron {
-    height: 400px;
     align-items: center;
     justify-content: center;
     background-color: #32C2A4;
@@ -73,10 +66,13 @@ footer {
 .copyright {
     background-color: #2C3E50;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copy_box {
     height: 40px;
-    width: 100px;
+    min-width: 200px;
     color: white;
 }
