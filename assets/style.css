@@ -32,6 +32,33 @@ header {
 }
 /* /HEADER */
 
+.ap_star::before ,
+.ap_star::after{
+    content: "";
+    display: inline-block;
+    width: 20vw;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.ap_star_white::before ,
+.ap_star_white::after{
+    content: "";
+    display: inline-block;
+    width: 20vw;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    color: white;
+}
+
+.white_star {
+    color: white;
+}
+
 /* JUMBOTRON */
 .jumbotron {
     align-items: center;
@@ -66,6 +93,25 @@ header {
 /* /JUMBOTRON */
 
 /* MAIN */
+
+/* OVERLAY */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+}
+
+.ap-card {
+    background-color: red;
+}
+
+/* /OVERLAY */
 section {
     padding: 15px;
 }
@@ -84,7 +130,8 @@ section {
 
 .ap-card {
     height: 100%;
-    background-color: seashell;
+    position: relative;
+    overflow: hidden;
 }
 
 .ap-container {
@@ -102,6 +149,23 @@ section {
     color: #2C3F50;
     border-color: white;
 }
+
+.form > * {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.snd-btn {
+    background-color: #19BC9B;
+    color: white;
+    border-color: #19BC9B;
+}
+
+.snd-btn:hover {
+    background-color: #1F836B;
+    color: white;
+}
 /* /MAIN */
 
 /* FOOTER */
@@ -109,6 +173,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.ap_logo ul {
+    padding: none;
 }
 
 .logo {
