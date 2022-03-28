@@ -15,7 +15,7 @@
     <header class="position-fixed w-100">
 
         <!-- NAVBAR -->
-        <nav class="h-100">
+        <div class="h-100">
             <div class="container h-100 ap_head">
                 <div class="row h-100 justify-content-between align-items-center">
                     <!-- CORREZZIONE: Per spaziare le colonne potevamo sfruttare la caratteristica flex che row gia possiede di default utilizzando justify-content. Correzzione applicata.-->
@@ -35,10 +35,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2 debug text-end d-md-none">H</div>
+                    <div class="col-2 text-end d-md-none align-items-center">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
         <!-- /NAVBAR -->
 
     </header>
@@ -57,11 +59,11 @@
 
                 <div class="row d-flex justify-content-around align-items-center">
                     
-                    <div class="col-3 ap_satanline"></div>
+                    <div class="col-3 ap_satanline satanline_white"></div>
                     <div class="col-2">
                         <i class="fa-solid fa-star fa-2x text-light"></i>
                     </div>
-                    <div class="col-3 ap_satanline"></div>
+                    <div class="col-3 ap_satanline satanline_white"></div>
                 </div>
 
                 <div class="row text-light py-4">
@@ -148,15 +150,15 @@
                     <div class="container-fluid">
 
                         <div class="row d-flex justify-content-evenly align-items-center py-3">
-                            <div class="col-3 ap_satanline text-dark"></div>
+                            <div class="col-3 ap_satanline satanline_white text-dark"></div>
                             <div class="col-2 text-light">
                                 <i class="fa-solid fa-star fa-2x"></i>
                             </div>
-                            <div class="col-3 ap_satanline"></div>
+                            <div class="col-3 ap_satanline satanline_white"></div>
                         </div>
 
                         <div class="row row-cols-1 row-cols-md-2 justify-content-around text-start">
-                            <div class="text-light">Freelancer is a free bootstra theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optimal LESS stylecheets for easy customization.</div>
+                            <div class="text-light py-3 py-md-0">Freelancer is a free bootstra theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optimal LESS stylecheets for easy customization.</div>
                             
                             <div class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto natus velit incidunt non corporis illo quam quia itaque ipsam qui nobis provident, veniam ut sint. Ipsum dicta maxime odio aut.</div>
                         </div>
@@ -194,7 +196,19 @@
 
                             </div>
 
-                            <div class="form debug"></div>
+                            <div class="form text-start">
+
+                                <div class="mb-3">
+
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
 
                             <div class="row justify-content-start align-content-center debug">
                                 <div class="col-2 offset-1 ap_debug"></div>
@@ -210,25 +224,37 @@
 
     <footer>
         
-        <section class="debug">
-            <div class="container debug">
+        <section class="text-light fw-light">
+            <div class="container">
+
                 <div class="row text-center justify-content-between">
-                    <div class="col-12 col-sm-3 debug">
-                        <h4>LOCATION</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="col-12 col-sm-3">
+                        <h5>LOCATION</h5>
+                        <p>2215 John Daniel Drive Clark, MO <br> 54243</p>
                     </div>
-                    <div class="col-12 col-sm-5 debug">
-                        <h4>AROUND THE WEB</h4>
-                        <div class="ap_logo">
-                            <div class="logo"></div>
-                            <div class="logo"></div>
-                            <div class="logo"></div>
-                            <div class="logo"></div>
+                    <div class="col-12 col-sm-5">
+                        <h5>AROUND THE WEB</h5>
+                        <div class="ap_logo py-2">
+                            <ul>
+                                <li class="logo">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </li>
+                                <li class="logo">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </li>
+                                <li class="logo">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                                <li class="logo">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </li>
+                            </ul>
+                        </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 debug">
-                        <h4>ABOUT FREELANCER</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maiores.s</p>
+                    <div class="col-12 col-sm-3 text-center">
+                        <h5>ABOUT FREELANCER</h5>
+                        <p>Freelancer is a free to use, open source Bootstrap theme created by <a class="text-decoration-none text-success foot-link" href="#">Start Bootstrap</a></p>
                     </div>
                 </div>
             </div>
@@ -241,3 +267,36 @@
     </footer>
 </body>
 </html>
+
+
+<!-- ALTERNATIVA ALLA NAVBAR LATERALE HEADER
+<div class="col-6 col-md-6 d-none d-md-block">
+    <ul class="nav ap_nav justify-content-end align-items-center">
+        <li class="nav-item">
+            <a class="nav-link ap_link" href="#">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ap_link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ap_link" href="#">CONTACT</a>
+        </li>
+    </ul>
+</div>
+-->
+
+<!--  ALTERNATIVA ALLE ICONE SOCIAL DEL FOOTER
+<div class="ap_logo py-2">
+    <div class="logo">
+        <i class="fa-brands fa-facebook-f"></i>
+    </div>
+    <div class="logo">
+        <i class="fa-brands fa-google-plus-g"></i>
+    </div>
+    <div class="logo">
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="logo">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</div> -->

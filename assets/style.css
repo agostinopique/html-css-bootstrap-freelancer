@@ -23,6 +23,13 @@ header {
 .ap_link{
     color: white;
 }
+
+.fa-bars {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
 /* /HEADER */
 
 /* JUMBOTRON */
@@ -51,6 +58,10 @@ header {
     height: 3px;
     background-color: black;
     border-radius: 10px;
+}
+
+.satanline_white {
+    background-color: #fff;
 }
 /* /JUMBOTRON */
 
@@ -103,8 +114,10 @@ section {
 .logo {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
+    line-height: 50px;
+    display: inline-block;
 }
 
 footer {
