@@ -4,46 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="./assets/style.css">
 
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header>
+    <header class="position-fixed w-100">
 
         <!-- NAVBAR -->
-        <div class="debug">
-            <div class="container debug">
-                <div class="row justify-content-between align-items-center">
+        <nav class="h-100">
+            <div class="container h-100 ap_head">
+                <div class="row h-100 justify-content-between align-items-center">
                     <!-- CORREZZIONE: Per spaziare le colonne potevamo sfruttare la caratteristica flex che row gia possiede di default utilizzando justify-content. Correzzione applicata.-->
-                    <div class="col-10 col-md-6 debug">col</div>
-                    <div class="col-6 col-md-4 d-none d-md-block debug">testo</div>
+                    <div class="col-10 col-sm-6">
+                        <h1 class="fw-bold fs-3 mx-2">START BOOTSTRAP</h1>
+                    </div>
+                    <div class="col-6 col-md-6 d-none d-md-block">
+                        <ul class="nav ap_nav justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link ap_link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ap_link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ap_link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="col-2 debug text-end d-md-none">H</div>
                 </div>
             </div>
-        </div>
+        </nav>
         <!-- /NAVBAR -->
 
     </header>
 
 
-    <div class="jumbotron debug">
-        <div class="container justify-content-center text-center debug">
-            <div class="profile_img debug"></div>
-            <h2>START BOOTSTRAP</h2>
-            <div class="container-fluid debug">
-                <div class="row d-flex justify-content-evenly">
-                    <div class="col-4 ap_debug">riga satanica</div>
-                    <div class="col-2 ap_debug">stellina</div>
-                    <div class="col-4 ap_debug">riga satanica</div>
+    <div class="jumbotron">
+        <div class="container justify-content-center py-1 text-center">
+
+            <div class="profile_img">
+                <img class="w-75" src="./assets/img/avatar.svg" alt="profile img">
+            </div>
+            
+            <h2 class="text-light fs-1 fw-bold">START BOOTSTRAP</h2>
+
+            <div class="container-fluid">
+
+                <div class="row d-flex justify-content-around align-items-center">
+                    
+                    <div class="col-3 ap_satanline"></div>
+                    <div class="col-2">
+                        <i class="fa-solid fa-star fa-2x text-light"></i>
+                    </div>
+                    <div class="col-3 ap_satanline"></div>
                 </div>
-                <div class="row">
-                    <div class="col-4 ap_debug"></div>
-                    <div class="col-4 ap_debug"></div>
-                    <div class="col-4 ap_debug"></div>
+
+                <div class="row text-light py-4">
+                    <div class="col-12 w-100 fs-5">
+                        <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -51,35 +77,59 @@
         <section>
 
             <!-- PORTFOLIO -->
-            <div class="container text-center debug">
+            <div class="container text-center">
                 <h2>PORTFOLIO</h2>
+
                 <div class="container">
-                    <div class="row d-flex justify-content-evenly">
-                        <div class="col-4 ap_debug">riga satanica</div>
-                        <div class="col-2 ap_debug">stellina</div>
-                        <div class="col-4 ap_debug">riga satanica</div>
+
+                    <div class="row text-dark d-flex justify-content-evenly align-items-center py-2">
+
+                        <div class="col-3 ap_satanline text-dark"></div>
+                        <div class="col-2">
+                            <i class="fa-solid fa-star fa-2x"></i>
+                        </div>
+                        <div class="col-3 ap_satanline"></div>
                     </div>
 
                     <!-- ALTERNATIVA: Per gestire il numero di colonne per i vari breakpoint potevi anche indicare nella classe row quante celle disporre per ogni breakpoint ( row-cols-1 row-cols-sm-2 row-cols-md-3) e cioè 1 cella di default, 2 celle da sm in su e 3 colonne da md in su. -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                        <div class="debug">
-                            <div class="ap-card">1</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/cabin.png" alt="cabin image">
+                            </div>
                         </div>
-                        <div class="debug">
-                            <div class="ap-card">2</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/cake.png" alt="cake image">
+                            </div>
                         </div>
-                        <div class="debug">
-                            <div class="ap-card">3</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/circus.png" alt="circus image">
+                            </div>
                         </div>
-                        <div class="debug">
-                            <div class="ap-card">4</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/game.png" alt="game img">
+                            </div>
                         </div>
-                        <div class="debug">
-                            <div class="ap-card">5</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/safe.png" alt="safe image">
+                            </div>
                         </div>
-                        <div class="debug">
-                            <div class="ap-card">6</div>
+
+                        <div class="py-2">
+                            <div class="ap-card">
+                                <img class="w-100" src="./assets/img/submarine.png" alt="submarine image">
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -90,21 +140,32 @@
         <section class="_about">
 
             <!-- ABOUT -->
-            <div class="container text-center debug">
-                <h2>ABOUT</h2>
+            <div class="container text-center">
+                <h2 class="text-light">ABOUT</h2>
+
                 <div class="ap-container">
+
                     <div class="container-fluid">
-                        <div class="row d-flex justify-content-evenly">
-                            <div class="col-4 ap_debug">riga satanica</div>
-                            <div class="col-2 ap_debug">stellina</div>
-                            <div class="col-4 ap_debug">riga satanica</div>
+
+                        <div class="row d-flex justify-content-evenly align-items-center py-3">
+                            <div class="col-3 ap_satanline text-dark"></div>
+                            <div class="col-2 text-light">
+                                <i class="fa-solid fa-star fa-2x"></i>
+                            </div>
+                            <div class="col-3 ap_satanline"></div>
                         </div>
-                        <div class="row row-cols-1 row-cols-md-2 justify-content-around">
-                            <div class="debug">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto natus velit incidunt non corporis illo quam quia itaque ipsam qui nobis provident, veniam ut sint. Ipsum dicta maxime odio aut.</div>
-                            <div class="debug">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto natus velit incidunt non corporis illo quam quia itaque ipsam qui nobis provident, veniam ut sint. Ipsum dicta maxime odio aut.</div>
+
+                        <div class="row row-cols-1 row-cols-md-2 justify-content-around text-start">
+                            <div class="text-light">Freelancer is a free bootstra theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optimal LESS stylecheets for easy customization.</div>
+                            
+                            <div class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto natus velit incidunt non corporis illo quam quia itaque ipsam qui nobis provident, veniam ut sint. Ipsum dicta maxime odio aut.</div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-3 ap_debug"></div>
+                            <div class="col-3 py-3">
+                                <button type="button" class="btn btn-outline-primary dl-btn">
+                                    <i class="fa-solid fa-download"></i>
+                                    Primary</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,17 +176,26 @@
         <section>
 
             <!-- CONTACT FORM -->
-            <div class="container text-center debug">
+            <div class="container text-center">
                 <h2>CONTACT ME</h2>
+
                 <div class="ap-co">
                     <div class="container-fluid">
+
                         <div class="container">
-                            <div class="row d-flex justify-content-evenly">
-                                <div class="col-4 ap_debug">riga satanica</div>
-                                <div class="col-2 ap_debug">stellina</div>
-                                <div class="col-4 ap_debug">riga satanica</div>
+
+                            <div class="row d-flex justify-content-evenly align-items-center py-3">
+
+                                <div class="col-3 ap_satanline text-dark"></div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-star fa-2x"></i>
+                                </div>
+                                <div class="col-3 ap_satanline"></div>
+
                             </div>
+
                             <div class="form debug"></div>
+
                             <div class="row justify-content-start align-content-center debug">
                                 <div class="col-2 offset-1 ap_debug"></div>
                             </div>

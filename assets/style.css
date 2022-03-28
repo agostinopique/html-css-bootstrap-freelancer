@@ -12,6 +12,17 @@
 
 /* HEADER */
 
+header {
+    background-color: #2B3E50;
+    color: white;
+    height: 90px;
+    z-index: 999;
+}
+
+
+.ap_link{
+    color: white;
+}
 /* /HEADER */
 
 /* JUMBOTRON */
@@ -19,6 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: #32C2A4;
+    padding-top: 100px;
 }
 
 .jumbo-box {
@@ -34,6 +46,12 @@
     margin: 0 auto;
 }
 
+.ap_satanline {
+    width: 30%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
 /* /JUMBOTRON */
 
 /* MAIN */
@@ -41,6 +59,9 @@ section {
     padding: 15px;
 }
 
+.ap-card img{
+    border-radius: 10px;
+}
 ._about {
     background-color: #19BC9B;
 }
@@ -58,6 +79,17 @@ section {
 .ap-container {
     width: 60%;
     margin: 0 auto;
+}
+
+.dl-btn {
+    color: white;
+    border-color: white;
+}
+
+.dl-btn:hover {
+    background-color: white;
+    color: #2C3F50;
+    border-color: white;
 }
 /* /MAIN */
 
