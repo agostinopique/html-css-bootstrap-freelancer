@@ -32,32 +32,30 @@ header {
 }
 /* /HEADER */
 
+/* STELLE & STRISCE */
+
 .ap_star::before ,
 .ap_star::after{
     content: "";
     display: inline-block;
     width: 20vw;
-    height: 3px;
+    height: 4px;
     background-color: black;
     border-radius: 10px;
     margin: 0 10px;
 }
 
-.ap_star_white::before ,
-.ap_star_white::after{
-    content: "";
-    display: inline-block;
-    width: 20vw;
-    height: 3px;
+.ap_star.ap_star_white::before ,
+.ap_star.ap_star_white::after{
     background-color: white;
-    border-radius: 10px;
-    margin: 0 10px;
     color: white;
 }
 
 .white_star {
     color: white;
 }
+
+/* /STELLE & STRISCE */
 
 /* JUMBOTRON */
 .jumbotron {
@@ -80,16 +78,10 @@ header {
     margin: 0 auto;
 }
 
-.ap_satanline {
-    width: 30%;
-    height: 3px;
-    background-color: black;
-    border-radius: 10px;
+.profile_img img{
+    width: 300px;
 }
 
-.satanline_white {
-    background-color: #fff;
-}
 /* /JUMBOTRON */
 
 /* MAIN */
@@ -105,7 +97,7 @@ header {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(33, 135, 112, 0.4);
+    background-color: rgba(26, 188, 156, 0.6);
     overflow: hidden;
 }
 
@@ -171,6 +163,7 @@ section {
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
+    box-shadow: none;
 }
 
 .snd-btn {
